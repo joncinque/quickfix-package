@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 QF_VERSION=$1
 
 rm -rf quickfix

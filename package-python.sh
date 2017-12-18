@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 rm -rf quickfix-python/C++
 rm -rf quickfix-python/spec
 rm -rf quickfix-python/quickfix*.py
