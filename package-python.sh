@@ -2,12 +2,12 @@ rm -rf quickfix-python/C++
 rm -rf quickfix-python/spec
 rm -rf quickfix-python/quickfix*.py
 rm -rf quickfix-python/doc
-rm -rf quickfix-python/LICENSE
+#rm -rf quickfix-python/LICENSE
 
 mkdir quickfix-python/C++
 mkdir quickfix-python/spec
 
-cp quickfix/LICENSE quickfix-python
+#cp quickfix/LICENSE quickfix-python
 
 cp quickfix/src/python3/*.py quickfix-python
 cp quickfix/src/C++/*.h quickfix-python/C++
@@ -24,5 +24,6 @@ touch quickfix-python/C++/config_windows.h
 rm -f quickfix-python/C++/stdafx.*
 
 pushd quickfix-python
-python setup.py sdist
-PYTHONWARNINGS="ignore" twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+python3 setup.py sdist
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+#twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
